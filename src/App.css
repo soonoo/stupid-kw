@@ -1,7 +1,36 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.App > div {
+  width: 100%;
+  min-width: 200;
+  max-width: 500px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.App > div > div {
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+}
+.App > div > input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-label {
+  display: flex;
+  align-items: start;
+  padding: 5px 0 5px;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
