@@ -102,3 +102,7 @@ div.form-selector > input {
     width: 20%;
   }
 }
+
+@media (max-width: 800px) {
+  .github-ribbon { visibility: hidden; }
+}
