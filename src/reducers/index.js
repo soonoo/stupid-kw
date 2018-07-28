@@ -7,6 +7,7 @@ const initialState = {
   major: data.major[0],
   title: '',
   prof: '',
+  isFetching: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -41,6 +42,30 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         prof: action.data,
+      };
+
+    case 'SET_YEAR':
+      return {
+        ...state,
+        year: action.data,
+      };
+
+    case 'SET_SEMESTER':
+      return {
+        ...state,
+        semester: action.data,
+      };
+
+    case 'START_FETCH':
+      return {
+        ...state,
+        isFetching: true,
+      };
+
+    case 'END_FETCH':
+      return {
+        ...state,
+        isFetching: false,
       };
 
     default:

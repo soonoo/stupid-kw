@@ -44,46 +44,61 @@ div.form-selector > input {
   padding: 10px 5px;
 }
 
+.list-item:hover {
+  background-color: #d3dcf5;
+}
+
 .list-item {
   cursor: pointer;
 }
 
-.list-item > div {
+.list-item > a > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.list-item > div:nth-child(1) {
+.list-item > a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #222;
+}
+
+.no-syllabus div {
+  color: #bbb;
+}
+
+.list-item > a > div:nth-child(1) {
   width: 27%;
 }
-.list-item > div:nth-child(2) {
+.list-item > a > div:nth-child(2) {
   width: 40%;
 }
-.list-item > div:nth-child(3) {
+.list-item > a > div:nth-child(3) {
   width: 8%;
 }
-.list-item > div:nth-child(4) {
+.list-item > a > div:nth-child(4) {
   width: 8%;
 }
-.list-item > div:nth-child(5) {
+.list-item > a > div:nth-child(5) {
   width: 17%;
 }
 
 @media (max-width: 400px) {
-  .list-item > div:nth-child(1) {
+  .list-item > a > div:nth-child(1) {
     display: none;
   }
-  .list-item > div:nth-child(2) {
+  .list-item > a > div:nth-child(2) {
     width: 50%;
   }
-  .list-item > div:nth-child(3) {
+  .list-item > a > div:nth-child(3) {
     width: 15%;
   }
-  .list-item > div:nth-child(4) {
+  .list-item > a > div:nth-child(4) {
     width: 15%;
   }
-  .list-item > div:nth-child(5) {
+  .list-item > a > div:nth-child(5) {
     width: 20%;
   }
 }
