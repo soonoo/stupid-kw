@@ -1,18 +1,14 @@
 import React from 'react';
 import Select from 'react-select';
+import { semester } from '../data';
 
-const options = [];
-for(let i = 1; i < 3; i++) {
-  options.push({ value: i.toString(), label: i.toString() + '학기' })
-}
-
-const SemesterSelector = () => {
+const SemesterSelector = ({ value }) => {
   return (
-    <div>
+    <div className='form-selector'>
       <span className='form-label'>년도</span>
       <Select
-        options={options}
-        value={null}
+        options={semester}
+        value={value}
       />
     </div>
   );

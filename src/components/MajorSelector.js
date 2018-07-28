@@ -2,13 +2,14 @@ import React from 'react';
 import Select from 'react-select';
 import { major } from '../data';
 
-const MajorSelector = () => {
+const MajorSelector = ({ value, onChange }) => {
   return (
-    <div>
+    <div className='form-selector'>
       <span className='form-label'>전공</span>
       <Select
         options={major}
-        value={null}
+        value={value}
+        onChange={onChange}
       />
     </div>
   );

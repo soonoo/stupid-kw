@@ -1,5 +1,5 @@
 export const college = [
-  { value: '00_00', label: '- 전체 -' },
+  { value: '', label: '- 전체 -' },
   { value: '0000', label: '전체공통' },
   { value: '1000', label: '공과대학' },
   { value: '3000', label: '인문사회과학대학' },
@@ -20,7 +20,7 @@ export const college = [
 ];
 
 export const major = [
-  { value:'00_00', label: '- 전체 -' },
+  { value:'', label: '- 전체 -' },
   { value:'0000', label: '전체공통 대학공통' },
   { value:'1000', label: '공과대학 대학공통' },
   { value:'1140', label: '공과대학 화학공학과' },
@@ -66,4 +66,16 @@ export const major = [
   { value:'H030', label: '소프트웨어융합대학 소프트웨어학부' },
   { value:'H040', label: '소프트웨어융합대학 정보융합학부' },
 ];
+
+const year = [];
+for(let i = 1998; i < 2019; i++) {
+  year.push({ value: i.toString(), label: i.toString() })
+};
+export { year };
+
+const semester = [];
+for(let i = 1; i < 3; i++) {
+  semester.push({ value: i.toString(), label: i.toString() + '학기' })
+}
+export { semester };
 

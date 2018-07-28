@@ -5,10 +5,10 @@ const StyledText = styled.input`
   height: 40px;  
 `;
 
-const Text = ({ placeholder }) => { 
+const Text = ({ placeholder, value, onChange }) => { 
   return (
-    <div>
-      <StyledText placeholder={placeholder} />
+    <div className='form-selector'>
+      <StyledText placeholder={placeholder} value={value} onChange={onChange} />
     </div>
   );
 };
