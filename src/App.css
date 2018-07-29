@@ -13,7 +13,7 @@ div.form-selector, div.list-item {
   max-width: 500px;
   margin-bottom: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 div.form-selector > div {
@@ -22,9 +22,12 @@ div.form-selector > div {
   max-width: 500px;
 }
 
+div.form-selector div {
+}
+
 div.form-selector > input {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 6px;
   box-sizing: border-box;
 }
