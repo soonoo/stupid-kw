@@ -1,14 +1,18 @@
 import React from 'react';
+import {DebounceInput} from 'react-debounce-input';
 import styled from 'styled-components';
-
-const StyledText = styled.input`
-  height: 40px;  
-`;
 
 const Text = ({ placeholder, value, onChange }) => { 
   return (
     <div className='form-selector'>
-      <StyledText placeholder={placeholder} value={value} onChange={onChange} />
+      <DebounceInput
+        style={{height: '40px'}}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        minLength={1}
+        debounceTimeout={500}
+      />
     </div>
   );
 };

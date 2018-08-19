@@ -14,7 +14,6 @@ class App extends Component {
     this.props.fetchData(2018, 2)
   }
 
-  getLink
   render() {
     const { year, semester, college, major, title, prof, isFetching } = this.props;
     const dataKey = `${year.value}-${semester.value}`;
