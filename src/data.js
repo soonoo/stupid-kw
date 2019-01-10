@@ -68,7 +68,7 @@ export const major = [
 ];
 
 const year = [];
-for(let i = 1998; i < 2019; i++) {
+for(let i = 1998; i < 2020; i++) {
   year.push({ value: i.toString(), label: i.toString() })
 };
 export { year };

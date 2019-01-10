@@ -11,7 +11,7 @@ import ListItem from './components/ListItem';
 
 class App extends Component {
   componentDidMount() {
-    this.props.fetchData(2018, 2)
+    this.props.fetchData(2019, 1)
   }
 
   render() {

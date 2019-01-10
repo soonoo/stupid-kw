@@ -7,6 +7,11 @@ export const fetchData = (year, semester) => (dispatch, getState) => {
       .then(r => r.json())
       .then(json => {
         dispatch(setData(year, semester, json));
+      })
+      .catch(err => {
+        dispatch(setData(year, semester, []));
+      })
+      .finally(() => {
         dispatch(endFetch());
       })
   );

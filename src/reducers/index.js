@@ -2,7 +2,7 @@ import * as data from '../data';
 
 const initialState = {
   year: data.year[data.year.length - 1],
-  semester: data.semester[1],
+  semester: data.semester[0],
   college: data.college[0],
   major: data.major[0],
   title: '',
