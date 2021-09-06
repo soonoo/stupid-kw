@@ -1,4 +1,5 @@
 # 광운대 강의계획서 검색기
+⚠️ 더 이상 강의 계획서가 업데이트되지 않습니다. https://github.com/0420syj/kw-syllabus 를 이용해 주세요.
 
 > https://soonoo.github.io/stupid-kw/  
 > 광운대학교 학부 강의 계획서를 조회할 수 있는 간단한 서비스입니다.  
